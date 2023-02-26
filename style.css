@@ -37,6 +37,7 @@ section {
 
 .join h2 {
     color: hsl(71, 73%, 54%);
+    font-size: 1.25rem;
 }
 
 .sub {
@@ -100,4 +101,26 @@ footer {
 
 footer a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .join {
+        width: 18.75rem;
+        height: 15.625rem;
+    }
+
+    .sub {
+        width: 18.75rem;
+        border-radius: 0rem;
+    }
+
+    .why {
+        width: 18.75rem;
+        border-radius: 0rem 0rem .625rem .625rem;
+    }
 }
